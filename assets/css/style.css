@@ -51,6 +51,12 @@ input {
   
   
 }
+
+#submit input button{
+    position: center;
+    width: 250px;
+    padding: 250px;
+}
 form { 
     margin: 0 auto; 
     width:250px;
