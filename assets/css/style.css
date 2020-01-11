@@ -1,0 +1,65 @@
+body {
+    /*background-color: #EAE7DC;*/
+    background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-repeat: repeat-y;
+    font-family: 'crimson text';
+    
+}
+
+#formBox {
+    background-color: #EAE7DC;
+    border: #E98074 solid 1px;
+    margin: 30%;
+    margin-top: 10%;
+    border-radius: 20px;
+
+}
+
+form {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #E98074;
+    margin-top: 0;
+    border-radius: 20px 20px 0 0 ;
+    
+    display: block;
+    
+}
+
+h2 {
+    
+    margin: 0 auto; 
+    width:250px;
+    text-align: center;
+}
+
+.forumStyling input {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    
+} 
+
+input {
+  width: 120px; 
+  margin: 0 auto; 
+  
+  
+  
+}
+form { 
+    margin: 0 auto; 
+    width:250px;
+    }
+
+.buttonStyling input {
+    color: red;
+    background-color: grey;
+    border: red solid 2px;
+    border-radius: 5px;
+    padding: 10px
+}
