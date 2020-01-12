@@ -62,9 +62,9 @@ form {
     width:250px;
     }
 
-.buttonStyling input {
-    color: red;
-    background-color: grey;
+/*.buttonStyling input {
+    
+    
     border: red solid 2px;
     border-radius: 5px;
     padding: 10px

@@ -1,31 +1,50 @@
 //Create conditional .on(click) statements when buttons are pushed//
 var Correct = 0;
 var totalIncorrect = 3;
-var totalCorrect = Correct;
+
 
 
 $( document ).ready(function() {
 
-$('#sub').on('click', function() {
 
 
-$('#trueOne').one('click', function() {
+
+$('#trueOne').on('click', function() {
     if($('#trueOne').is(':checked')) { 
         Correct += 1;
+    alert(Correct); }
+    else if ($('#falseOne').is(':checked')) { 
+        Correct -= 1;
     console.log(Correct) }
  });
 
- $('#trueTwo').one('click', function() {
+ $('#trueTwo').on('click',function() {
     if($('#trueTwo').is(':checked')) { 
         Correct += 1;
     console.log(Correct) }
- });
-
- $('#trueThree').one('click', function() {
-    if($('#trueThree').is(':checked')) { 
-        Correct += 1;
+    else if ($('#falseTwo').is(':checked')) { 
+        Correct -= 1;
     console.log(Correct) }
  });
+
+ $('#trueThree').on('click', function() {
+    if($('#trueThree').is(':checked')) { 
+        Correct += 1;
+        console.log(Correct) 
+     }
+     else if ($('#falseThree').is(':checked')) { 
+        Correct -= 1;
+    console.log(Correct) }
+ });
+
+    if (Correct === 3) {
+        alert('YOU BEAT ME AT MY OWN GAME!');
+    }
+
+    setTimeout(function() {
+        alert("You took too long, now your candy's gone!")
+        window.location.reload()
+    }, 20000);
 
 });
 //Make them determine if the answer was right or wrong//
@@ -37,6 +56,7 @@ $('#trueOne').one('click', function() {
 
 
 //Create bottom page timer that will time them//
+
 //When the timer hits 00:00:00 end the quiz and force show answer function// 
 
-});
+
